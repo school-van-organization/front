@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import logo from '../assets/scholvan.png'
 import notebook from '../assets/notebook.png'
@@ -7,12 +6,11 @@ import phone from '../assets/phone.png'
 import child from '../assets/child.png'
 import bell from '../assets/bell.png'
 import contract from '../assets/contract.png'
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <>
-  
-      
       <header className=' flex flex-col md:flex-row items-center gap-10 w-full px-10'>
           <div className=' flex flex-col  items-center  w-full'>
             <img src={logo} alt="Logo" className='w-[150px] block m-auto' />
@@ -27,8 +25,15 @@ function App() {
             </p>
           </div>
           <div className='flex gap-2  justify-center md:justify-end items-center w-full '>
-            <a className='hover:bg-bg-dark hover:border-3 hover:border-yellow-orange-500 hover:text-yellow-orange-500 bg-yellow-orange-500 w-[153px] text-center pt-2 pb-2  text-black rounded-2xl'>login</a>
-            <a className='hover:bg-bg-dark hover:border-3 hover:border-yellow-orange-500 hover:text-yellow-orange-500 bg-yellow-orange-500 w-[153px] text-center pt-2 pb-2  text-black rounded-2xl'>cadastra-se</a>
+              <Link to="/login" className='hover:bg-bg-dark hover:border-3 hover:border-yellow-orange-500 hover:text-yellow-orange-500 bg-yellow-orange-500 w-[153px] text-center pt-2 pb-2  text-black rounded-2xl'>
+                <span>
+                  login
+                </span>
+              </Link>
+          
+              <Link to="/cadastro" className='hover:bg-bg-dark hover:border-3 hover:border-yellow-orange-500 hover:text-yellow-orange-500 bg-yellow-orange-500 w-[153px] text-center pt-2 pb-2  text-black rounded-2xl'>
+                cadastra-se
+              </Link>
           </div>
       </header>
       <main className='main '>
