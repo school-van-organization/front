@@ -42,7 +42,7 @@ function App() {
               <p className='text-yellow-orange-500 w-full md:w-9/12 md:text-2xl '>
                 Otimize seu tempo e acompanhe seus alunos e responsáveis de forma prática e eficiente
               </p>
-              <p className='md:text-1xl w-full md:w-9/12'>
+              <p className='md:text-1xl w-full md:w-9/12 text-white'>
                 Nosso sistema web e mobile foi desenvolvido para simplificar a rotina dos motoristas de van escolar. Com ele, você pode gerenciar alunos, responsáveis e pagamentos sem complicação.
               </p>
             
@@ -103,7 +103,7 @@ function App() {
               </div>
 
           </section>
-          <footer className='p-10'>
+          <footer className='p-10 text-white'>
              © 2025 School Van. Todos os direitos reservados.
           </footer>
       </main>
