@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 @import "tailwindcss";
 @tailwind utilities; 
+
 
 @theme {
   --color-yellow-light-500: rgb(252,232,178);
