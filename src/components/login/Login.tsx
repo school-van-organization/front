@@ -6,6 +6,7 @@ import '../main/App.css'
 export default function Login(){
     return(
        <div className='grid grid-cols-12 h-[100vh]'>
+
             <div className='col-start-1 col-span-3 flex justify-start flex-col items-center gap-8 rounded-br-[150px] border border-yellow-orange-500 pt-20 '>
                 <div className=' flex flex-col  items-center  w-full'>
                     <img src={logo} alt="Logo" className='w-[150px] block m-auto' />
