@@ -1,7 +1,8 @@
 import React from 'react';
 import PlanoCard from './PlanoCard';
 
-export default function Planos() {
+
+const Planos = () => {
   return (
     <div className="flex justify-center flex-wrap gap-4 pt-5">
       <PlanoCard
@@ -44,3 +45,5 @@ export default function Planos() {
     </div>
   );
 }
+
+export default Planos;

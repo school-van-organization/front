@@ -1,48 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-@import "tailwindcss";
-@tailwind utilities; 
-
-
-@theme {
-  --color-yellow-light-500: rgb(252,232,178);
-  --color-yellow-orange-500: rgb(254, 216, 119); 
-  --color-bg-dark : #404040;
-}
-
-:root {
-  --bg-dark : #404040;
-  --bg-yellow-orange: rgb(254, 216, 119); 
-}
-
-body {
-  background: var(--bg-dark) ;
-  overflow-x: hidden;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  outline: none;
-}
-
-a:hover {
-  color: var(--bg-yellow-orange);
-}
-
-.imagem {
-  animation: entraDireita 1s ease-out forwards;
-  opacity: 0;
-}
-
-@keyframes entraDireita {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+main {
+    margin-left: 250px;
+    margin-right: 6px;
+    overflow: hidden;
 }

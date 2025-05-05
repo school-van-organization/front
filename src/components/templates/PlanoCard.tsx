@@ -7,7 +7,7 @@ type planos = {
     beneficios:string[],
 }
 
-export default function PlanoCard({ titulo, preco, beneficios }:planos) {
+const PlanoCard = ({ titulo, preco, beneficios }:planos) => {
   return (
     <div className="grid grid-rows-12 p-2 max-w-[350px] w-full h-[740px] rounded-2xl  bg-linear-to-r from-yellow-orange-500 to-yellow-light-500">
       <h1 className="text-center text-2xl font-bold">{titulo}</h1>
@@ -26,3 +26,5 @@ export default function PlanoCard({ titulo, preco, beneficios }:planos) {
     </div>
   );
 }
+
+export default PlanoCard;
