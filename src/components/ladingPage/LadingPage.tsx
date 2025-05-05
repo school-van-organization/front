@@ -36,7 +36,7 @@ function App() {
               </Link>
           </div>
       </header>
-      <main className='main '>
+      <div className='main-ladingpage '>
           <section className='grid grid-cols-1 md:grid-cols-2'>
              <div  className='flex flex-col items-center  gap-4 p-10'>
               <p className='text-yellow-orange-500 w-full md:w-9/12 md:text-2xl '>
@@ -106,7 +106,7 @@ function App() {
           <footer className='p-10 text-white'>
              © 2025 School Van. Todos os direitos reservados.
           </footer>
-      </main>
+      </div>
   
     </>
   )
