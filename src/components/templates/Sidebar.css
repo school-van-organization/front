@@ -1,17 +1,5 @@
-.logo-img {
-    width: 35px;
-    min-height: 35px;
-    border-radius: 50%;
-    object-fit: over;
-
-}
-
-.border {
-    border: 1px solid red;
-}
-
 .sidebar {
-    color: white;
+    color: var(--bg-yellow-orange);
     position: fixed;
     top: 0;
     display: flex;
@@ -24,16 +12,19 @@
     transition:  all 0.35s;
 }
 
+.logo {
+    width: 50%;
+    margin: auto;
+}
+
 .sidebar-header {
    width: 100%; 
     margin-bottom: 16px;
 }
 
-.logo-img:hover {
-    margin-left: 10px;
-    transform: scale(1.5);
-    transition: transform 0.4s;
-} 
+img {
+    color: var(--bg-yellow-orange);
+}
 
 .sidebar button {
     height: 60px;
@@ -57,10 +48,21 @@
 }
 
 .sidebar button:hover > span {
-    background-color: rgba(255,255,255, 0.08);
+    background-color: var(--bg-yellow-orange,0.08);
+    color: black;
+    width: 100%;
 }
 
-.sidebar button i {
+.sidebar button span img {
+    transition: filter 0.3s;
+}
+
+.sidebar button:hover > span > img {
+    filter:  grayscale(100%) brightness(0);
+}
+
+
+.sidebar button .image-button {
     position: relative;
     font-size: 28px;
     transition: 0.2s;
@@ -78,6 +80,9 @@
 }
 
 @media(width < 920px) {
+    .logo{
+        width: 100%;
+    }
     .sidebar {
         width: 72px;
     }
@@ -97,3 +102,62 @@
     }
 }
 
+.button-mobile {
+    display: none;
+    align-self: flex-start;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    border: 0;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-active {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.menu-mobile-active button {
+    background-color: transparent ;
+    border: 0;
+    color: inherit;
+    margin-bottom: 16px;
+}
+
+.menu-mobile-active button > span{
+    display: inline-flex;
+    align-items: center;
+}
+
+.mobile-text {
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+
+@media (max-width: 480px){
+    .sidebar {
+        display: none;
+    }
+
+    .button-mobile {
+        display: flex;
+    }
+
+    main{
+        margin-left: 6px ;
+    }
+}

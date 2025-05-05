@@ -13,6 +13,7 @@
 :root {
   --bg-dark : #404040;
   --bg-yellow-orange: rgb(254, 216, 119); 
+  --color-yellow-light-500: rgb(252,232,178);
 }
 
 body {

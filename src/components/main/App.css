@@ -1,5 +1,6 @@
 main {
-    margin-left: 250px;
-    margin-right: 6px;
+    margin-left: 241px;
     overflow: hidden;
+    background-color: white;
+    min-height: 100vh;
 }
