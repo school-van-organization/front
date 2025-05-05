@@ -1,0 +1,26 @@
+
+a {
+    color: black;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  a:hover {
+    color: var(--bg-yellow-orange);
+  }
+  
+  .imagem {
+    animation: entraDireita 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes entraDireita {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
