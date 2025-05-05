@@ -22,10 +22,6 @@
     margin-bottom: 16px;
 }
 
-img {
-    color: var(--bg-yellow-orange);
-}
-
 .sidebar button {
     height: 60px;
     background: transparent;

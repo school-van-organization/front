@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from '../assets/scholvan.png'
 import { Link } from 'react-router-dom';
 import '../main/App.css'

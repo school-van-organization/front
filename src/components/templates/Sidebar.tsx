@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import logoImg from '../assets/logo.svg'
 import bagImg from '../assets/bag.svg'
 import payImg from '../assets/pay.svg'

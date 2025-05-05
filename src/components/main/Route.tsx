@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LadingPage from "../ladingPage/LadingPage";
 import Login from "../login/Login";
