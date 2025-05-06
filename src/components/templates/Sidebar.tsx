@@ -25,7 +25,7 @@ const Sidebar = () =>{
                 <button>
                     <span>
                         <img src={bagImg} className='image-button' style={{ fill: 'black' }}/>
-                        <span>Home</span>
+                        <span>Alunos</span>
                     </span>
                 </button>
                 <button>
